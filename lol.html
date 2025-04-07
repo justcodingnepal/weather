@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left_section">
+            <div class="content left-content">
+                content here
+            </div>
+        </div>
+        <div class="mid_section">
+            <div class="content location">
+                content here
+            </div>
+        </div>
+        <div class="right_secton">
+            <div class="content right-content">
+                content here
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    .left_section ,.mid_section, .right_secton{
+        flex: 1;
+        height: 100%;
+    }
+    .location{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top:5%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16;
+        background-color: red;
+    }
+
+    .left-content , .right-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rebeccapurple;
+    }
+</style>
+</html>

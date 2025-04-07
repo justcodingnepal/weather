@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top_section">
+            <span id="place_name"></span>
+            <input type="text" placeholder="Search Bar" id="search_bar" class="search_section">
+            <button id="button" class="search_section">Search</button>
+            <span id="day" class="date_time"></span>
+            <span id="date" class="date_time"></span>
+            <span id="time" class="date_time"></span>
+        </div>
+        <div class="left_section">
+            Current Temperature:<span id="day_temp"></span>
+            Feels Like:<span id="feels_like"></span>
+            <span id="icon"></span>
+            Weather Status:<span id="weather_info"></span>
+            Weather Details:<span id="info"></span>
+        </div>
+        <div class="right_section">
+            Pressure:<span id="pressure"></span>
+            Humidity:<span id="humidity"></span>
+            Wind Speed:<span id="wind"></span>
+            Wind Direction:<span id="wind_direction"></span>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
