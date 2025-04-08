@@ -80,32 +80,12 @@ body {
   padding-left: 80px;
   position: relative;
 }
-.left_section::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="yellow" d="M400 256L275 150v75H150l-75 75 75 75v-75h125v75z"/></svg>');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  right: -100px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-  opacity: 0.8;
-}
 .left_section #day_temp {
+  color: rgb(8, 8, 8);
   font-size: 150px;
   font-weight: 300;
   line-height: 1;
   position: relative;
-}
-.left_section #day_temp::after {
-  content: "°C";
-  font-size: 60px;
-  position: absolute;
-  top: 10px;
 }
 .left_section #weather_info {
   font-size: 48px;
@@ -115,23 +95,8 @@ body {
 .left_section {
   position: relative;
 }
-
-.left_section::before {
-  content: "Current Temperature:";
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.left_section::after {
-  content: "Weather Status:";
-  position: absolute;
-  top: 160px;
-  left: 0;
-  opacity: 0;
-}
 .right_section {
+  margin-top: 20vh;
   position: absolute;
   right: 30px;
   top: 120px;
@@ -143,28 +108,14 @@ body {
   grid-template-columns: 1fr;
   gap: 20px;
 }
-.right_section::before {
-  content: "";
-  width: 4px;
-  height: 100%;
-  background-color: rgba(255, 193, 7, 0.6);
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
 .right_section span {
   display: inline-block;
   font-weight: bold;
   margin-left: 10px;
   font-size: 18px;
 }
-.right_section {
-  font-size: 18px;
-}
 @media (max-width: 768px) {
-  .top_section {
+   .top_section {
     flex-direction: column;
     align-items: center;
   }
@@ -172,10 +123,5 @@ body {
     padding-left: 20px;
     align-items: center;
     text-align: center;
-  }
-  .right_section {
-    position: static;
-    width: 100%;
-    margin-top: 20px;
   }
 }

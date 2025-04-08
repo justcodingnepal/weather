@@ -53,3 +53,4 @@ function updateDateTime() {
   window.onload = () => {
     takes_location();
   };
+$("day")
