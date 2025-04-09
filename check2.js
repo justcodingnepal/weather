@@ -47,7 +47,7 @@ async function weatherapi() {
     const data = await response.json();
     updateWeatherUI(data);
   } catch (error) {
-    console.error("Error fetching weather data:", error);
+    alert("Enter correct city")
   }
 }
 function updateWeatherUI(data) {
