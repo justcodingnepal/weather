@@ -79,14 +79,14 @@ function updateWeatherUI(data) {
       console.log("Other weather condition");
   }
   document.getElementById("place_name").innerHTML = data.name;
-  document.getElementById("day_temp").innerHTML = `${data.main.temp} `;
+  document.getElementById("day_temp").innerHTML = `${data.main.temp}°C`;
   document.getElementById("weather_info").innerHTML = weather_detail;
   document.getElementById("info").innerHTML = data.weather[0].description;
-  document.getElementById("feels_like").innerHTML = `Feels like: ${data.main.feels_like}`;
-  document.getElementById("pressure").innerHTML = `Pressure: ${data.main.pressure} hPa`;
-  document.getElementById("humidity").innerHTML = `Humidity: ${data.main.humidity}%`;
-  document.getElementById("wind").innerHTML = `Wind Speed: ${data.wind.speed} m/s`;
-  document.getElementById("wind_direction").innerHTML = `Wind Direction: ${data.wind.deg}°`;
+  document.getElementById("feels_like").innerHTML = `${data.main.feels_like}`;
+  document.getElementById("pressure").innerHTML = `${data.main.pressure} hPa`;
+  document.getElementById("humidity").innerHTML = `${data.main.humidity}%`;
+  document.getElementById("wind").innerHTML = `${data.wind.speed} m/s`;
+  document.getElementById("wind_direction").innerHTML = `${data.wind.deg}°`;
   document.getElementById("icon").src = iconUrl;
   updateDateTime();
 }
