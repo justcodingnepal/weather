@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image</title>
+</head>
+<body>
+    <div class="header">
+        <div class="search-bar">
+            <input type="text" name="weather_data" class="input-field" id="weather_input" placeholder="Search Weather">
+        </div>
+        <button class="submit-button">
+            Search
+        </button>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="current-temp">
+                Current Temperature:
+                <span class="temperature" id="temperature">
+
+                </span>
+            </div>
+            <div class="clouds">
+                Clouds
+                Weather Details:
+                <span class="cloud-details"></span>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="pressure">
+                Pressure
+                <span id="pressure"></span>
+            </div>
+            <div class="humidity">
+                Humidity
+                <span id="humidity"></span>
+            </div>
+            <div class="windspeed">
+                Wind Speed
+                <span id="wind-speed"></span>
+            </div>
+            <div class="wind-direction">
+                Wind Direction
+                <span id="wind-direction"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .header{
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        gap: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-field{
+       outline: none;
+       border: none;
+       padding: 5%;
+       border-bottom: 1px solid black;
+    }
+    .submit-button{
+        height: 65%;
+        cursor: pointer;
+        background-color: navajowhite;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .submit-button:hover{
+        transition: 50ms;
+        transform: rotate(2deg);
+        height: 70%;
+        color: white;
+        font:900;
+    }
+    .container{
+        background-color: rebeccapurple;
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-section{
+        height: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+    }
+    .right-section{
+        height: 100%;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+    }
+</style>
+</html>
