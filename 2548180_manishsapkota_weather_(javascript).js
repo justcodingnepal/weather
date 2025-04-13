@@ -22,6 +22,7 @@ async function first_load() {
     const response = await fetch(`http://localhost/Prototype2/connection.php?q=${defaultCityName}`);;
     const data = await response.json();
     updateWeatherUI(data);
+    console.log(data)
   } catch (error) {
     console.error("Error fetching weather data:", error);
   }
@@ -34,6 +35,7 @@ async function weatherapi() {
   try {
     const response = await fetch(`http://localhost/Prototype2/connection.php?q=${defaultCity}`);;
     const data = await response.json();
+    console.log(data)
     updateWeatherUI(data);
   } catch (error) {
     alert("Enter correct city");
