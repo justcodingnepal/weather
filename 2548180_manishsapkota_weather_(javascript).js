@@ -29,7 +29,20 @@ async function first_load() {
 }
 
 first_load();
+function convertTemp() {
+  const selectedUnit = document.getElementById("unitToggle").value;
+  const tempSpan = document.getElementById("tempValue");
+  const unitSpan = document.getElementById("unit");
 
+  if (selectedUnit === "F") {
+    const fahrenheit = (tempCelsius * 9 / 5) + 32;
+    tempSpan.textContent = fahrenheit.toFixed(1);
+    unitSpan.textContent = "F";
+  } else {
+    tempSpan.textContent = tempCelsius.toFixed(1);
+    unitSpan.textContent = "C";
+  }
+}
 async function weatherapi() {
   const city = document.getElementById("search_bar").value;
   try {

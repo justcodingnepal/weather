@@ -17,6 +17,16 @@
         <span id="date" class="date_time"></span>
         <span id="time" class="date_time"></span>
       </div>
+      <div class="rightsection_top">
+        <label class="switch">
+          <input type="checkbox" id="unitToggle" onchange="toggleUnit()">
+          <span class="slider"></span>
+        </label>
+        
+        <div class="temp-display">
+          Temperature: <span id="temp">25</span>°<span id="unit">C</span>
+        </div>
+      </div>
       <div class="left_section">
         <p class="temp_info">Current Temperature:</p><span id="day_temp"></span>
         <img id="icon" alt="Weather Icon">
