@@ -43,6 +43,7 @@ async function weatherapi() {
 }
 
 function updateWeatherUI(data) {
+  console.log(data)
   const weather_detail = data.weather[0].main;
   const iconCode = data.weather[0].icon;
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
